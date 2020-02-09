@@ -11,20 +11,28 @@
 .fa.fa-home{
     font-size: 1.5rem;
 }
-
-.line1 {
-    width: 40%;
+.section-title {
+	color:var(--secondcolor);
+    font-size: 40px;
+}
+.line {
+    width: 150px;
     background: #ddd;
     height: 2px;
     margin: auto
 }
-.line1 span {
+
+.line span {
     display: block;
-	width: 50%;
+    width: 100px;
     height: 4px;
     background-color: var(--firstcolor);
-    margin: auto;
+    margin: 1rem auto;
     bottom: 2px;
+}
+
+.nav-link{
+	font-weight:bold;
 }
 .mypic{
     width: 200px;
@@ -216,25 +224,7 @@ ul.navbar-nav li:last-child{
     margin: 3rem 0;
     
 }
-.section-header .section-title {
-    font-size: 40px;
-}
 
-.line {
-    width: 150px;
-    background: #ddd;
-    height: 2px;
-    margin: auto
-}
-
-.line span {
-    display: block;
-    width: 100px;
-    height: 4px;
-    background-color: var(--secondcolor);
-    margin: auto;
-    bottom: 2px;
-}
 
 .section-header p {
     width: 50%;
@@ -409,6 +399,7 @@ ul.navbar-nav li:last-child{
 /* About Section */
 .about {
     background-color: #eaedf0;
+	    padding-top: 5rem;
 }
 
 .about-item {
@@ -416,10 +407,10 @@ ul.navbar-nav li:last-child{
 	padding-bottom:85px;
 }
 .about-item.border{
-	padding-top:10%
+	padding-top:3%
 }
-.about-item:first-child,.about-item:last-child{
-	padding-top:15%
+.about-item:last-child{
+	padding-top:6%
 }
 .about-item .icon {
     color: var(--secondcolor);
