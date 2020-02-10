@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DLD IMMO</title>
 	<link href="images/icon.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>DLD IMMO</title>
 </head>
 <body>
     <!--Header-->
     <header>
+	
+		<!--topnav-->
         <div class="topnav">
             <div class="container">
                 <div class="row">
@@ -22,7 +24,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- ./topnav-->
+		
+		<!-- bottomnav -->
         <div class="bottomnav">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
@@ -73,8 +77,9 @@
                     </div>
                 </div>
             </nav>
-        </div>
+        </div><!-- ./bottomnav -->
     </header><!-- Fin Header-->
+	
     <!--Slider-->
     <section class="mySlide">
         <div class="container-fluid">
@@ -114,7 +119,9 @@
             </div>
         </div>
     </section> <!--Fin Slider-->
-    <section class="location">
+	
+    <!-- location -->
+	<section class="location">
         <!-- infoLocation -->
         <div class="infoLocation">
             <div class="container">
@@ -134,7 +141,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><!-- ./location -->
+	
     <!-- Business -->
     <section class="sections business text-center">
         <div class="overlay">
@@ -144,13 +152,14 @@
                     <p class="bs_desc">
                         DLDIMMO, votre agence immobilière à Marrakech et sa région, pour tous vos besoins en immobilier!
                     </p>
-                    <button class="bs_btn">Plus d'infos</button>
+                    <button class="bs_btn btn">Plus d'infos</button>
                 </div>
             </div>
         </div>
-    </section>
+    </section><!-- ./Business -->
+	
     <section>
-        <!-- partie element de location -->
+        <!-- Partie element de location -->
         <div class="items">
             <div class="container">
                 <div class="row">
@@ -333,14 +342,15 @@
         </div><!-- Fin partie element de location -->
         
     </section>
-    <section class="sections portfolio"  id="port">
+	<!-- Gallery -->
+    <section class="sections Gallery"  id="port">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="text-center">
                 <h2 class="section-title">Notres Produit</h2>
                 <div class="line mb-4">
                     <span class="position-relative"></span>
                 </div>
-            </div><!-- ./section-header -->
+            </div>
             
             <div class="buttons">
                 <button class="all active_btn" id="all">Tous</button>
@@ -349,7 +359,6 @@
                 <button class="Maison" id="Maison">Maison</button>
                 <button class="Villalux" id="Villalux">Villa lux</button>
             </div>
-            
             <div class="Images">
                 <div class="row">
 
@@ -402,51 +411,51 @@
                     </div>
                     </div>
                     
-            </div><!-- ./Images -->
-            <button class="more">Regarder plus</button>
-            
+            </div>
+            <button class="more btn btn-block display-block m-auto">Regarder plus</button>
         </div>
-    </section>
-    <!-- pleasure -->
-
-    <section class="sections pleasure text-center position-relative">
+    </section><!-- ./Gallery -->
+	
+    <!-- Tweeter -->
+    <section class="sections tweet text-center position-relative">
         <div class="container">
             <div class="slick">
-                <div class="pleasure-info mt-4">
+                <div class="tweet-info mt-4">
                     <i class="fa fa-twitter"></i>
-                    <p class="pleasure-info-desc">
+                    <p class="tweet-info-desc">
                         Notre métier est de vous apporter tout au long de l'avancement de votre dossier, notre<span> soutien</span> et notre<span> professionnalisme</span> afin de vous accompagner dans toutes les étapes de<span> l'achat</span> d'un<span> bien immobilier.</span>
 						DLDIMMO met à votre disposition de nombreux outils afin de centraliser vos recherches.
 					</p>
-                    <span class="pleasure-info-text">hier à 22:12</span>
+                    <span class="tweet-info-text">hier à 22:12</span>
                 </div>
                 
             </div>
         </div>
         <img src="images/rectangle-white.png" class="position-absolute w-100 imgBlanc">
-    </section>
-    <!-- Next Project -->
+    </section><!-- ./tweet -->
+    
+	<!-- Next Project -->
     <section class="sections next">
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-xs-12">
                     <p class="next-desc lead text-center"><b class="h1">Vendre en toute confiance !</b> <br>Vous souhaitez vendre votre villa,votre appartement ou encore votre commerce ? Envoyez-nous un message avec le maximum d'informations et profitez d'un accompagnement pérsonnalisé pour vendre votre bien immobilier au meilleur prix!</p>
                 </div>
-                <div class="col-md-3 col-xs-12">
-                    <div class="nextbtn w-100 h-100">
-                        <button class="next-btn">Contacter</button>
-
-                    </div>
+                <div class="col-md-3 col-xs-12 d-flex justify-content-center align-items-center">
+                        <button class="bs_btn btn p-2 pl-4 pr-4">Contacter</button>
                 </div>
             </div>
         </div>
-    </section>
+    </section><!-- ./Next-->
+	
     <!-- google map -->
-    <div class="map embed-responsive embed-responsive-16by9">
+    <div class="map embed-responsive embed-responsive-16by9" >
         <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108703.12115633766!2d-8.0778938097983!3d31.634602332407727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech!5e0!3m2!1sfr!2sma!4v1578751685267!5m2!1sfr!2sma"  frameborder="1" allowfullscreen></iframe>
-      </div>
-    <!-- footer -->
+     </div><!-- map -->
+    
+	<!-- footer -->
     <footer class="footer">
+		<!-- topfooter -->
         <div class="topfooter py-4">
             <div class="container">
                 <div class="row">
@@ -480,17 +489,21 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- ./topfooter -->
+		
+		<!-- bootomfooter -->
         <div class="bootomfooter">
             <p class=" m-0 p-2 text-light text-center">
                 Copyright &copy; 2020  DOULADI Oussama
             </p>
-        </div>
-    </footer>
+        </div><!-- ./bootomfooter -->
+    </footer><!-- ./footer -->
+	
     <!-- scrollTop -->
     <div class="scrollTop border border-bottom-0">
         <i class="fa fa-arrow-up"></i>
     </div>
+	<!-- JavaScript -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>

@@ -1,20 +1,33 @@
+/******************************************************
+ *			Réalisé par : DOULADI Oussama	          *
+ *			Date : 02/2020                            *
+ ******************************************************
 
-/*Style générale */
+======= Sommaire =======
+ 1- Style général
+ 2- Barre de navigation
+ 3- Slider
+ 4- Business Section
+ 5- Elements de location
+ 6- Gallery
+ 7- Tweeter
+ 8- Next Project
+ 9- Google Maps
+ 10- Footer
+ 11- Page About
+*/
+
+/*===== 1- Style générale =====*/
 :root{
     --firstcolor:#08526d;
     --secondcolor:#fd753c/*ec1c23*/;
 }
 
-.fa.fa-home.blue{
-    color: var(--firstcolor);
-}
-.fa.fa-home{
-    font-size: 1.5rem;
-}
 .section-title {
 	color:var(--secondcolor);
     font-size: 40px;
 }
+
 .line {
     width: 150px;
     background: #ddd;
@@ -31,49 +44,90 @@
     bottom: 2px;
 }
 
-.nav-link{
-	font-weight:bold;
+.fa.fa-home.blue{
+    color: var(--firstcolor);
 }
+
+.fa.fa-home{
+    font-size: 1.5rem;
+}
+.btn:hover{
+	color: var(--secondcolor) !important;
+}
+.bs_btn {
+    padding: 10px 20px;
+    background: var(--firstcolor) !important;
+    margin-bottom: 10px;
+    border: 0;
+    color:white !important;
+}
+.scrollTop {
+    position: fixed;
+    bottom: 37px;
+    right: 15px;
+    background: var(--secondcolor);
+	border-radius:20%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    display: none
+}
+
 .mypic{
     width: 200px;
     height: 200px;
 	border-radius:50%;
 }
+
 .imgBlanc{
     transform: rotate(180deg);
     top: -1px;
     left: 0;
 }
+
 .imgGray{
     left: 0;
     bottom: -50px;
     z-index: 2;
     transform: rotate(180deg);
 }
-/*barre de navigation*/
+
+/*===== 2- Barre de navigation =====*/
 .topnav{
     background-color: var(--firstcolor);
     color:#fff;
     padding: .6rem;
 }
+
 ul.navbar-nav li:last-child{
     padding-right: 20px;
 }
+
 .bottomnav .logo{
     color: var(--firstcolor);
 }
+
 .bottomnav{
 	background:#fff;
 }
+
 .bottomnav .seclogo{
     color: var(--secondcolor);
 }
+
+.nav-link{
+	font-weight:bold;
+}
+
 .clrNav{
 	background:#ddd;
 }
-/*Slider */
 
-
+/*===== 3- Slider =====*/
 #slider1 p:first-child{
     z-index: 2;
     top: 32%;
@@ -82,12 +136,14 @@ ul.navbar-nav li:last-child{
     font-weight: 100;
     color: white;
 }
+
 #slider1 p:first-child span{
  
     color: var(--secondcolor);
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 #slider1 .carouselOverlay{
     z-index: 1;
     top:0;
@@ -98,6 +154,7 @@ ul.navbar-nav li:last-child{
     justify-content: center;
     
 }
+
 #slider1 .carouselOverlay p{
     line-height: 1.5;
     margin: 7.5rem;
@@ -111,29 +168,17 @@ ul.navbar-nav li:last-child{
     }
 }
 
-.carousel-indicators,
-.carousel-control-prev,
-.carousel-control-next{
-    z-index: 99;
-}
-/*location info*/
-.infoLocation h2{
-    color: var(--secondcolor);
-}
-
-/* business========= */
+/*===== 4- Business Section=====*/
 .business {
     background-image: url('../images/busnisse.jpg');
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
     height: 250px;
     color: #fff;
     margin-bottom: 4rem;
 }
-
 .business .bs_info .bs_title {
     font-size: 35px;
     margin: 2rem 0 1rem;
@@ -147,13 +192,6 @@ ul.navbar-nav li:last-child{
     margin-bottom: 15px
 }
 
-.business .bs_info .bs_btn {
-    padding: 10px 20px;
-    background: var(--firstcolor);
-    margin-bottom: 10px;
-    border: 0;
-    color:white;
-}
 
 @media (max-width:768px) {
     .business {
@@ -169,7 +207,7 @@ ul.navbar-nav li:last-child{
     }
 }
 
-/*location items*/
+/*===== 5- Elements de location =====*/
 
 .item-image{
     height: 200px;
@@ -215,32 +253,22 @@ ul.navbar-nav li:last-child{
 .sup-info i{
     color: var(--firstcolor);
 }
-/*Team*/
-.team{
-    margin: 5rem 0;
-}
-/* portfolio ============ */
-.portfolio{
+
+/*===== 6- Gallery =====*/
+.Gallery{
     margin: 3rem 0;
     
 }
 
 
-.section-header p {
-    width: 50%;
-    line-height: 1.5;
-    color: #888;
-    margin: 15px auto 5rem;
-}
-
-.portfolio .buttons {
+.Gallery .buttons {
     width: 70%;
     margin: auto;
     text-align: center;
     margin-bottom: 20px
 }
 
-.portfolio .buttons button {
+.Gallery .buttons button,.Gallery .more {
     width: 150px;
     background: #333;
     color: #fff;
@@ -249,30 +277,23 @@ ul.navbar-nav li:last-child{
     outline: 0
 }
 
-.portfolio .Images > div {
+.Gallery .Images > div {
     margin-bottom: 20px
 }
 
-.portfolio .Images > div img{
+.Gallery .Images > div img{
     width: 100%;
     height: 100%;
 }
 
-.portfolio .more {
-    width: 250px;
-    padding: 10px;
+.Gallery .more {
     background: var(--firstcolor);
-    color: #fff;
-    border: 0;
-    display: block;
-    margin: auto;
-    outline: 0
 }
 
 .active_btn {
     background: var(--firstcolor) !important;
 }
-/* pleasure  =========== */
+/*===== 7- Tweeter (AboutPage*)=====*/
 .overlay {
     position: absolute;
     top: 0;
@@ -281,19 +302,20 @@ ul.navbar-nav li:last-child{
     left: 0;
     background: rgba(0,0,0,0.6)
 }
-.pleasure {
+
+.tweet {
     background: #333;
     color: #fff;
     padding: 100px 0;
     position: relative;
 }
 
-.pleasure .pleasure-info i {
+.tweet .tweet-info i {
     font-size: 40px;
     margin-bottom: 10px
 }
 
-.pleasure .pleasure-info .pleasure-info-desc{ 
+.tweet .tweet-info .tweet-info-desc{ 
     width: 60%;
     margin: auto;
     color: #ddd;
@@ -301,22 +323,22 @@ ul.navbar-nav li:last-child{
 }
 @media (max-width: 768px) { 
 
-    .pleasure .pleasure-info .pleasure-info-desc{ 
+    .tweet .tweet-info .tweet-info-desc{ 
     width: 90%;
 	}
 }
 
-.pleasure .pleasure-info .pleasure-info-desc span {
+.tweet .tweet-info .tweet-info-desc span {
     color: var(--secondcolor)
 }
 
-.pleasure .pleasure-info .pleasure-info-text {
+.tweet .tweet-info .tweet-info-text {
     font-style: italic;
     color: #ddd
 }
 
 
-/* next Project ============ */
+/*===== 8- Next Project ======*/
 .next {
     background: var(--secondcolor);
     padding: 3rem;
@@ -328,14 +350,6 @@ ul.navbar-nav li:last-child{
     margin-top: 7px
 }
 
-.next .next-btn {
-    background: var(--firstcolor);
-    font-size: 20px;
-    padding: 10px 20px;
-    color: #fff;
-    outline: 0;
-    border: 0;
-}
 .next .nextbtn{
     display: flex;
     align-items: center;
@@ -359,11 +373,11 @@ ul.navbar-nav li:last-child{
 }
 
 
-/*map*/
+/*===== 9- Google Maps =====*/
 .map{
     height: 300px;
 }
-/*Footer*/
+/*===== 10- Footer =====*/
 .footer .topfooter{
     background-color: var(--firstcolor);
     color: #fff;
@@ -372,31 +386,15 @@ ul.navbar-nav li:last-child{
     background-color: var(--secondcolor);
 	font-size: 1.1rem;
 }
-/* scrolltop ========*/
-.scrollTop {
-    position: fixed;
-    bottom: 37px;
-    right: 15px;
-    background: var(--secondcolor);
-	border-radius:20%;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    z-index: 999;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    display: none
-}
 
-/*page about*/
+/*===== 11- Page about =====*/
 .white>a{
     color: white !important;
 }
 .white>a:hover>i{
     color: var(--secondcolor);
 }
-/* About Section */
+/*About Section*/
 .about {
     background-color: #eaedf0;
 	    padding-top: 5rem;
@@ -409,7 +407,7 @@ ul.navbar-nav li:last-child{
 .about-item.border{
 	padding-top:3%
 }
-.about-item:last-child{
+.about-item:not(.border){
 	padding-top:6%
 }
 .about-item .icon {
@@ -426,12 +424,13 @@ ul.navbar-nav li:last-child{
     line-height: 1.6;
     color: #555555
 }
-
+/*Contact section*/
 .contact{
     align-items: center;
     justify-content: center;
     margin: 2rem 0 5rem;
 }
+/*Media Screen*/
 @media (max-width:768px) {
     .appeller , #date {
         display: none;

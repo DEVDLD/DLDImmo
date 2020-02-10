@@ -1,3 +1,8 @@
+/******************************************************
+ *			Réalisé par : DOULADI Oussama	          *
+ *			Date : 02/2020                            *
+ ******************************************************
+*/
 //slider height
 function sliderHeight() {
     var height1=$('header').innerHeight();
@@ -20,7 +25,7 @@ $(window).resize(sliderHeight);
 $('.carousel').carousel({
   interval: 2000
 });
-//date aujoudhuit
+//Date aujoud'hui
 setInterval(function(){
     var dt = new Date();
     $('#date').html("Date d'aujourd'hui <b>"+dt.toLocaleString()+"</b>");
@@ -29,7 +34,7 @@ setInterval(function(){
 //items hover effect
 $('.item').hover(function(){$(this).toggleClass('shadow')});
 
-// Portfolio Buttons Change bg 
+// Gallery Buttons Change bg 
 $('.buttons button').click(function(){
         
 	$(this).addClass('active_btn').siblings().removeClass('active_btn');
