@@ -140,7 +140,7 @@ ul.navbar-nav li:last-child{
 #slider1 p:first-child span{
  
     color: var(--secondcolor);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -164,7 +164,7 @@ ul.navbar-nav li:last-child{
 
     #slider1 .carouselOverlay p{
         font-size: 20px;
-        margin: 2rem;
+        margin: 4rem 2rem;
     }
 }
 
