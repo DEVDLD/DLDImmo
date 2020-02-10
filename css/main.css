@@ -108,7 +108,7 @@ ul.navbar-nav li:last-child{
 }
 
 .bottomnav .logo{
-    color: var(--firstcolor);
+    color: var(--firstcolor) !important;
 }
 
 .bottomnav{
