@@ -7,8 +7,8 @@
  1- Style général
  2- Barre de navigation
  3- Slider
- 4- Business Section
- 5- Elements de location
+ 4- Elements de location
+ 5- Business Section
  6- Gallery
  7- Tweeter
  8- Next Project
@@ -164,50 +164,12 @@ ul.navbar-nav li:last-child{
 
     #slider1 .carouselOverlay p{
         font-size: 20px;
-        margin: 4rem 2rem;
+        margin: 3rem 3rem 4rem;
     }
 }
 
-/*===== 4- Business Section=====*/
-.business {
-    background-image: url('../images/busnisse.jpg');
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    position: relative;
-    height: 250px;
-    color: #fff;
-    margin-bottom: 4rem;
-}
-.business .bs_info .bs_title {
-    font-size: 35px;
-    margin: 2rem 0 1rem;
-}
 
-.business .bs_info .bs_desc {
-    width: 60%;
-    margin: auto;
-    font-size: 20px;
-    color: #ddd;
-    margin-bottom: 15px
-}
-
-
-@media (max-width:768px) {
-    .business {
-        height: 300px;
-    }
-    .business .bs_info .bs_title {
-        font-size: 25px;
-    }
-
-    .business .bs_info .bs_desc {
-        width: 80%; 
-        font-size: 18px;
-    }
-}
-
-/*===== 5- Elements de location =====*/
+/*===== 4- Elements de location =====*/
 
 .item-image{
     height: 200px;
@@ -252,6 +214,45 @@ ul.navbar-nav li:last-child{
 }
 .sup-info i{
     color: var(--firstcolor);
+}
+
+/*===== 5- Business Section=====*/
+.business {
+    background-image: url('../images/busnisse.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    height: 250px;
+    color: #fff;
+    margin-bottom: 4rem;
+}
+.business .bs_info .bs_title {
+    font-size: 35px;
+    margin: 2rem 0 1rem;
+}
+
+.business .bs_info .bs_desc {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    color: #ddd;
+    margin-bottom: 15px
+}
+
+
+@media (max-width:768px) {
+    .business {
+        height: 300px;
+    }
+    .business .bs_info .bs_title {
+        font-size: 25px;
+    }
+
+    .business .bs_info .bs_desc {
+        width: 80%; 
+        font-size: 18px;
+    }
 }
 
 /*===== 6- Gallery =====*/
