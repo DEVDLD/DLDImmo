@@ -430,7 +430,7 @@ ul.navbar-nav li:last-child{
 .contact{
     align-items: center;
     justify-content: center;
-    margin: 2rem 0 5rem;
+    margin: 0 0 5rem;
 }
 /*Media Screen*/
 @media (max-width:768px) {
