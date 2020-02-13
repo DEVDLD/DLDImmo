@@ -73,29 +73,25 @@ $(window).scroll(function(){
 	}
 	
 });
-//hide collapse  navbar on click Bootstrap 4
-$('.navbar-nav>li>a:not(.dropdown-toggle),.dropdown-menu a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
 // Scroll to Top
 $('.scrollTop').click(function(){
 	$('body,html').animate({
 		scrollTop : 0
 	},800);
 });
+//hide collapse  navbar on click Bootstrap 4
+$('.navbar-nav>li>a:not(.dropdown-toggle),.dropdown-menu a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+
 //autres links
 $('.vendre').click(function(){
-	var winWidth=$(window).innerWidth();
-	if(winWidth>768){
-			$('body,html').animate({
-			scrollTop : 600
-		},500);
+	if($('.bottomnav').hasClass( "fixed-top" )){
+		$('html,body').animate({scrollTop: $("#immobilier").offset().top - $("#immobilier").height()},1000);
 	}
 	else{
-		$('body,html').animate({
-		scrollTop : 400
-	},500);
+		$('html,body').animate({scrollTop: $("#immobilier").offset().top - $("#immobilier").height()*2},1000);
 	}
-	
 });
+
 

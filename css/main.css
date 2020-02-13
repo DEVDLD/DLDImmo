@@ -26,6 +26,7 @@
 .section-title {
 	color:var(--secondcolor);
     font-size: 40px;
+	margin-top:62px;
 }
 
 .line {
@@ -108,7 +109,7 @@ ul.navbar-nav li:last-child{
 }
 
 .bottomnav .logo{
-    color: var(--firstcolor);
+    color: var(--firstcolor) !important;
 }
 
 .bottomnav{
@@ -342,7 +343,7 @@ ul.navbar-nav li:last-child{
 /*===== 8- Next Project ======*/
 .next {
     background: var(--secondcolor);
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .next .next-desc {
